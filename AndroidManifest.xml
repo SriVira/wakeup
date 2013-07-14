@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.cletomcj.wakeup"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="8"
+        android:targetSdkVersion="17" />
+    
+    <uses-permission android:name="android.permission.DISABLE_KEYGUARD" />
+    <uses-permission android:name="android.permission.VIBRATE"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+        
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/skull_app"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name="com.cletomcj.wakeup.MainActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name="com.cletomcj.wakeup.HelpActivity" 
+            	  android:label="@string/help" >
+        </activity>
+        <activity android:name="com.cletomcj.wakeup.AboutActivity"
+           		  android:label="@string/about" >
+        </activity>
+        <activity android:name="com.cletomcj.wakeup.AlarmActivity"
+           		  android:label="@string/alarms_list" >
+        </activity>
+        <activity android:name="com.cletomcj.wakeup.MusicListsActivity"
+           		  android:label="@string/song_lists" >
+        </activity>
+        <activity android:name="com.cletomcj.wakeup.ListActivity"
+           		  android:label="@string/songs" >
+        </activity>
+        <activity
+    		android:name="com.ipaulpro.afilechooser.FileChooserActivity"
+    		android:icon="@drawable/ic_chooser"
+    		android:label="@string/chooser_label" >
+    		<intent-filter>
+        	<action android:name="android.intent.action.GET_CONTENT" />
+
+        	<category android:name="android.intent.category.DEFAULT" />
+        	<category android:name="android.intent.category.OPENABLE" />
+
+        	<data android:mimeType="*/*" />
+    		</intent-filter>
+		</activity>
+        <receiver android:name="com.cletomcj.wakeup.broadcastrcv.AlarmBroadcastReceiver">
+        </receiver>
+    </application>
+
+</manifest>

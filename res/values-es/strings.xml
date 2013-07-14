@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">WakeUp</string>
+    <string name="action_settings">Settings</string>
+    <string name="help">Help</string>
+    <string name="about">About</string>
+    <string name="help_text">Aqui metemos el texto de ayuda.</string>
+    <string name="about_text">Aqui metemos el texto de about.</string>
+    <string name="alarms_list">Alarma</string>
+    <string name="song_lists">Listas canciones</string>
+    <string name="cancel">Cancelar</string>
+    <string name="accept">Aceptar</string>
+    <string name="turnoff">Apagar</string>
+    <string name="add_list">Añadir lista</string>
+    <string name="songs">Canciones</string>
+    <string name="new_list">Nueva Lista</string>
+     <string name="write_title">Escriba el titulo</string>
+    <string name="delete">Borrar</string>
+    <string name="edit">Editar</string>
+    <string name="select_as_alarm">Seleccionar como alarma</string>
+    <string name="edit_list">Editar lista</string>
+    <string name="edit_title">Nuevo titulo</string>
+    <string name="add_song">Añadir cancion</string>
+    <string name="chooser_label">File Manager</string>
+    <string name="wrong_file">Tipo de fichero incorrecto!</string>
+    <string name="alarm_canceled">Alarma cancelada!</string>
+    <string name="alarm_activated">Alarma activada!</string>
+    
+
+</resources>
